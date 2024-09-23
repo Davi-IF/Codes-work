@@ -2,4 +2,4 @@
 
 olá, seja bem-vind(a)!
 
- códigos feitos no trabalho para melhorar desenvolvimento lógico.
+ códigos feitos fora de casa para melhorar desenvolvimento lógico.
