@@ -1,2 +1,5 @@
 # Codes
- códigos feitos no trabalho
+
+olá, seja bem-vind(a)!
+
+ códigos feitos no trabalho para melhorar desenvolvimento lógico.
