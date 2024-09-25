@@ -1,0 +1,75 @@
+(GIT e GITHUB)
+
+- GIT-> software de controle de versão
+- GitHub -> Plataforma de Rede social para Programadores
+
+(GIT)- ferramenta de versionamento de código
+versões -> muitas de um mesmo código
+	VCS
+commit -> pega a pasta e envia pro repositorio central
+
+VCS -> versionamento local (atualmente)
+
+"commit "-> apos final do dia -> "push" -> rep. remoto
+
+(vantagens)
+- controle histórico
+- trab. em equipe
+- ramificação de projeto
+- segurança
+- Organização
+------------------------------------------------------------
+		(GITHUB)
+
+- Git é o repositório local
+- Github -> repositório remoto/ plataforma social para programadores
+ 	- podemos fazer sugestões/ 
+- repositórios ilimitados -> projeto divulgado
+- hospedagem de código fonte
+- características de rede social
+- Githuub Pages integrado
+- colaboração
+- Forks
+- criar conta 
+- criador do GIT -<Linux>
+------------------------------------------------------------
+		(instalar ferramentas Git/ github)
+
+- instalar ferramentas -> navegador, gitscm, githubDesktop, Vscode
+- opção de alteração da instalação do GIT-> vscodedefault
+- nome rep, criação da pasta geral, license MIT (criação de rep local)
+- apos finalizar a criação do rep. local -> publish repo. public, depois 
+precisará apenas atualizar no GithubWeb
+
+---------------------------------------------------------------
+	(subir código para repositorio)
+
+- abrir vscode pela opção
+- alteração de cod, pode atualizar pelo Githubdesktop com commit, depois 
+subir para re. remoto com push.
+- caso mexa no rep. remoto e  conteudo nao exista no local, será necessário fazer
+um pull.
+- push -> empurrar pro servidor remoto// pull-> trazer para máquina local// fetch-> igualar
+---------------------------------------------------------------
+	(Clone repositorio)
+
+- acessar GitHub web e clicar no arquivo opção "abrir com Github destop"
+- automaticamente será direcionado para clonagem
+- enviar projetos antigos a partir da criação de novo rep. além disso inserir pasta dentro
+desse rep. e depois publicar no github.
+
+---------------------------------------------------------------
+	(Issues)
+
+- verificar se seu problema foi resolvido, se nao, abrir issues
+- abrir solicitação para pedir ajuda
+- Pull request -> enviar como colaborador do VScode, proprietário pode aprovar sua ajuda 
+e adicionar sua solução para a brench(ramificação)
+- new issue -> fazer pedido
+- travar conversa
+- settings - saved repplies(respostas salvas) 
+
+---------------------------------------------------------------
+
+
+
