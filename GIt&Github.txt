@@ -83,3 +83,11 @@ e adicionar sua solução para a brench(ramificação)
 
 --------------------------------------------------------------
 	(Brench)
+
+- master - tronco principal
+- brench - ramificação
+- commitar fora da master
+- merge - mesclar nova feat
+- criar new brench conteudo(html)
+- criar new brench designt(css)
+- realizar merge após finalizações de alterações.
