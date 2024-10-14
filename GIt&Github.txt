@@ -1,6 +1,6 @@
 (GIT e GITHUB)
 
-- GIT-> software de controle de versão
+- GIT--> software de controle de versão
 - GitHub -> Plataforma de Rede social para Programadores
 
 (GIT)- ferramenta de versionamento de código
