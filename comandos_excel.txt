@@ -1,5 +1,4 @@
 (Comandos Excel) - MÓDULO 1
- 
 
 -> ajuste de colunas selecionando
 -> crt + alt + v -> copiar e colar avançado
@@ -32,3 +31,10 @@
 -> SOMASE(intervalo; critério; intervalo da soma)
 -> SOMASES(intervalo da soma; interv_criterio1; criterio1; interv_criterio2; criterio2)
 -> MÉDIASE(intervalo critério; critério1; intervalo
+
+
+-----------------------------------------------------------------------------------------
+			{modulo 2}
+
+- BTG - banco, tabela, gráfico
+- analisar rapidamente uma informação -> usa T. Dinâmica/ BD Atualiza constantemente -> F. do Excel c/ tabelas
