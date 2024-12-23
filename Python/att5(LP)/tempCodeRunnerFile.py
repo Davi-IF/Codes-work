@@ -38,7 +38,8 @@ def main ():
         else:
             print("invalid, try again...")
         
-if __name__ == "__main__":
-    main()
+        if __name__ == "__main__":
+
+         main()
         
               
