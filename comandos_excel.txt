@@ -38,3 +38,5 @@
 
 - BTG - banco, tabela, gráfico
 - analisar rapidamente uma informação -> usa T. Dinâmica/ BD Atualiza constantemente -> F. do Excel c/ tabelas
+- selecionar tabela; aba inserir -> tabela dinamica -> colocar as opções de cadaparte da tabela.
+- 
