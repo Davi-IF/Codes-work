@@ -54,3 +54,8 @@
 -D)  Direita - Extrai o texto da direita para a esquerda/ RIGHT() =  Direita ( Texto ; Qde. de Caracteres)
 
 -F) Ext.Texto - Retorna os caracteres do meio de uma cadeia de texto/ MID() =  Ext.Texto ( Texto ; Núm. Inicial ; Qde de Caracteres*)
+
+
+- PROCV(vertical) -> v. procurado; informação(tabela completa); coluna a ser retornada; exato ou não.
+
+- PROCH(horizontal) -> v.procurado; tabela; coluna a ser retornada; exato ou não.
