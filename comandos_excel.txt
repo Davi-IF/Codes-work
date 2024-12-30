@@ -1,0 +1,56 @@
+(Comandos Excel) - MÓDULO 1
+
+-> ajuste de colunas selecionando
+-> crt + alt + v -> copiar e colar avançado
+-> cores usando pincel
+-> soma (soma)
+-> cont.num (quantidade de numeros)
+-> MAXIMO(valor maior) ou =MAIOR
+-> MENOR (menor valor) ou =MINIMO (=MENOR(DEPOSITO; CONT.SE(DEPOSITO;0)+1)
+-> formatação condicional
+-> CRT + 1 (atalho para formatação)
+-> dd "de" mmmm "de" aaaa: criação de data manual
+-> CRTL + 1  "km"
+-> Ctrl+Shift+1	Ctrl+Shift+2	Ctrl+Shift+3	Ctrl+Shift+4	Ctrl+Shift+5
+-> CRTL + ALT + V (somente o que quiser copiar)
+-> CRTL - ou CRTL + (retirar e ad linha) 
+
+-> Função =SE(testelogico; "sim"; "nao")
+
+-> funcao E (vários testes lógicos)| EX.:=SE(E(C29="Fluente"; D29="Avançado");"X"; "-")
+-> OU (Uma das condições)
+-> A1&B1 (concatenar)| =SE(C29&D29="FluenteAvançado";"X";"-")
+-> travar célula F4 a1$f4  ( multiplicar celula fixa pelas demais)
+ =K$5*$J6 ( muda apenas a coluna)
+
+-> Banco de dados (conjunto de dados)
+-> função HOJE()-célula
+-> CONT.SE(intervalo; critério) - (contar através de condicionais) | 
+=CONT.SES(intervalo - ambas trarão contável (mais de 2 critérios)
+
+-> SOMASE(intervalo; critério; intervalo da soma)
+-> SOMASES(intervalo da soma; interv_criterio1; criterio1; interv_criterio2; criterio2)
+-> MÉDIASE(intervalo critério; critério1; intervalo
+
+
+-----------------------------------------------------------------------------------------
+			{modulo 2}
+
+- BTG - banco, tabela, gráfico
+- analisar rapidamente uma informação -> usa T. Dinâmica/ BD Atualiza constantemente -> F. do Excel c/ tabelas
+
+(tabela dinâmica):
+
+- selecionar tabela; aba inserir -> tabela dinamica -> colocar as opções de cadaparte da tabela.
+
+(texto formulas):
+
+-A)  Núm.Caract -  Conta a quantidade de caracteres de um texto/ LEN() =  Núm.Caract ( texto )
+
+-B)  Localizar - Retorna a posição de um conjunto de caracteres em um texto/ SEARCH()-  = Localizar ( Texto procurado ; No texto )
+
+-C)  Esquerda - Extrai o texto da esquerda para a direita/ LEFT() = Esquerda ( Texto ; Qde. de Caracteres)
+
+-D)  Direita - Extrai o texto da direita para a esquerda/ RIGHT() =  Direita ( Texto ; Qde. de Caracteres)
+
+-F) Ext.Texto - Retorna os caracteres do meio de uma cadeia de texto/ MID() =  Ext.Texto ( Texto ; Núm. Inicial ; Qde de Caracteres*)
