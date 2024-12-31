@@ -56,6 +56,6 @@
 -F) Ext.Texto - Retorna os caracteres do meio de uma cadeia de texto/ MID() =  Ext.Texto ( Texto ; Núm. Inicial ; Qde de Caracteres*)
 
 
-- PROCV(vertical) -> v. procurado; informação(tabela completa); coluna a ser retornada; exato ou não.
+- PROCV(vertical) -> v. procurado; informação(tabela completa); coluna a ser retornada; exato ou não. (maior valor menor do que o procurado)
 
 - PROCH(horizontal) -> v.procurado; tabela; coluna a ser retornada; exato ou não.
