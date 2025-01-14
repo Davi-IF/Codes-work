@@ -41,7 +41,7 @@
 
 (tabela dinâmica):
 
-- selecionar tabela; aba inserir -> tabela dinamica -> colocar as opções de cadaparte da tabela.
+- selecionar tabela; aba inserir -> tabela dinamica -> colocar as opções de cada parte da tabela.
 
 (texto formulas):
 
@@ -55,7 +55,165 @@
 
 -F) Ext.Texto - Retorna os caracteres do meio de uma cadeia de texto/ MID() =  Ext.Texto ( Texto ; Núm. Inicial ; Qde de Caracteres*)
 
-
-- PROCV(vertical) -> v. procurado; informação(tabela completa); coluna a ser retornada; exato ou não. (maior valor menor do que o procurado)
+------------------------------------------------------------------------------
+- PROCV(vertical) -> v. procurado; informação(tabela completa); coluna a ser retornada; exato ou não. (maior valor menor do que o procurado) / limitação -> valor procurado deve constar na 1º coluna
 
 - PROCH(horizontal) -> v.procurado; tabela; coluna a ser retornada; exato ou não.
+
+- INDICE -> trazer conteúdo linha ou coluna correspondente (matriz; ou corresp linha/col)
+
+- CORRESP ->traz posição contrario procurar salario em uma tabela  (elemento; matriz; 0 ou 1)
+
+- desloc (ref; índice 1; índice 2) -> usado com corresp
+
+- procv com concatenação -> procv(célula&" - "&AL; tabela; índice da col; 1)
+
+- tabela dinâmica, organizar em varias
+
+-----------------------------------------------------------------------------
+			
+			{modulo 3}
+
+.xlsx --> arquivo padrão do excel
+.xlsm --> arquivo de excel com macro/VBA
+(Formatação de ícones) --> pag inicial/ formatação cond
+- win + . --> colocar / para repetir --> =REPT(""; n de vezes)
+
+* (vincular imagem) --> copiar imagem e colar ela vinculada
+
+    1 - criar formula colocando o intervalo das imagems usando índice(inte; linha 1; célula com número)
+
+    2 - mudar nome de img vinculada
+
+    3 - mudar o ultimo element da formula índice indicando a col de numeração da imagem da outra planilha do botão
+
+* (validação de dados) --> 
+1 - dados -> validação de dados -> criar paametros
+
+
+1 - F5 - selecionar tudo e + F5  + constante --> elimina espaços em branco
+2 - CRIAR LISTA A PARTIR DO CABEÇALHO
+3 - INDIRETO --> PUXA LISTA
+4 - DESLOC(Cl. incial; 0(deslo); 0(desloc);CONT.VALORES(Cel1-cel7)altura;1) --> criar validação de lista inteligente
+
+controle form -> habilitar desenvolvedor/ inserir botão
+
+INDICE(MATRIZ; INDICE DO BOTAO)
+
+area de impressão -> layout d epag/ definir area de impressão
+
+(CAPA e AUTOMAÇÃO) -->
+
+inserir imagem / visual basics/ colocar código no arq da img e pasta de trab/ mudar nome da imagem/ reiniciar arquivo
+-----------------------------------------------------
+ [capa] 
+Private Sub Worksheet_Activate()
+
+Application.DisplayFullScreen = True
+Application.DisplayFormulaBar = False
+ActiveWindow.DisplayHorizontalScrollBar = False
+ActiveWindow.DisplayVerticalScrollBar = False
+ActiveWindow.DisplayHeadings = False
+ActiveWindow.Zoom = 100
+Cells(1, 1).Select
+
+
+End Sub
+
+Private Sub Worksheet_Deactivate()
+
+Application.DisplayFullScreen = False
+Application.DisplayFormulaBar = True
+ActiveWindow.DisplayHorizontalScrollBar = True
+ActiveWindow.DisplayVerticalScrollBar = True
+ActiveWindow.DisplayHeadings = True
+
+End Sub
+
+----------------------------------------
+  [pasta de trabalho]
+
+Private Sub Worksheet_Activate()
+
+Application.DisplayFullScreen = True
+Application.DisplayFormulaBar = False
+ActiveWindow.DisplayHorizontalScrollBar = False
+ActiveWindow.DisplayVerticalScrollBar = False
+ActiveWindow.DisplayHeadings = False
+ActiveWindow.Zoom = 100
+Cells(1, 1).Select
+
+
+End Sub
+
+Private Sub Worksheet_Deactivate()
+
+Application.DisplayFullScreen = False
+Application.DisplayFormulaBar = True
+ActiveWindow.DisplayHorizontalScrollBar = True
+ActiveWindow.DisplayVerticalScrollBar = True
+ActiveWindow.DisplayHeadings = True
+
+End Sub
+--------------------------------------------
+
+macro --> sequencia de ações
+
+
+----------------------------------
+		[ GRÁFICOS ]
+
+- linha -> tendencia ou evolução
+- coluna -> comparação
+- barras -> comparação(2)
+- pizza -> Distribuição
+- Radar - Competências
+- Dispersão -> analise perspectiva de vendas // usar formula 
+
+ PREVISAO(valor do preco; intervalo de y e de x) --> calcular venda esperada
+
+------------------------------------------------
+		(MÓDULO 4)
+
+- Power Query: importar dados de fora
+
+- importar -> dados -> tipo do arquivo -> abrir arquivo/transformar
+	- extrair, transformar, carregar -> ETL
+- adicionar / transformar (tratar os dados)
+- mudar formato de letras -  > formato/ div colunas
+- carregar -> fechar e carregar/  para retornar au pquery -> consulta -> editar
+
+(case 1) -> mostrar porcentagem de tipos de email
+ 
+	1 - organizar os tipos por meio da power query
+	2 - criar tabela dinâmica
+	3 - elencar tipos, quantidade, porcentagem usando a mesma aba provedor
+	4 - mudar a contagem para porcentagem
+
+importar da web -> arquivo em tabelas/ se faltar, acrescentar em 2 tabelas(atual e nova), depois realizar propcv para procurar.
+
+- UNICO -> Retorna valor exclusivo
+	- EX.: CLASSIFICAR(ÚNICO(Copa2022[Grupo]))
+
+- FILTRAR -> Selecionar de acordo com critério
+	- EX.: =CLASSIFICAR(FILTRO(Copa_do_Mundo
+	2022[[Seleçao]:[Continente]];Copa_do_Mundo2022[Grupo]=J1);2;1)
+
+(case 2) -> contar valores diferentes
+	=cont.valores(ÚNICO(tb_passeios[Passeio]))
+
+------------------------------------------------------
+- PROXCX -> procurar valor numa matriz, incluindo erros.
+
+	PROCX(valor pesquisado; matriz de pesquisa; coluna retornável erro; aproximado ou não; ordem de pesquisa )
+	- serve para saber os dias finais ou nao
+
+	
+(case 3) -> maior(matriz, k)-> intervalo de valores desordenados, constante de acordo com ranking
+
+--------------------------------------------------
+Atingir Meta -> VF = VP * (1+t)^n
+
+	- =VF(taxa mensal;meses;-pagmensal;-val.presente) -- tirar o - do pagmensal -> saberei quanto ficarei apos retiral tal valor todo mês.
+
+	- estipular meta -> dados -> atingir meta -> mudar valor
