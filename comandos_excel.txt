@@ -217,3 +217,50 @@ Atingir Meta -> VF = VP * (1+t)^n
 	- =VF(taxa mensal;meses;-pagmensal;-val.presente) -- tirar o - do pagmensal -> saberei quanto ficarei apos retiral tal valor todo mês.
 
 	- estipular meta -> dados -> atingir meta -> mudar valor
+
+
+--------------------------------------------------
+
+VBA - visual basics
+
+- gravar macros - sequencia de ações
+- gravar macro -> colocar acao -> ir em macros
+- módulos -> pasta que inclui os códigos de cada planilha
+-> gravar macro e atribuir a alguma coisa(botão cadastro)
+- ao salvar, deve -> procurar -> formato habilitado a macro
+
+- atingir meta -> dados -> teste de hipóteses -> atingir meta -> alterar valor do pgto mensal (realizar gravando macro)->
+
+		Sub atingirMeta()
+'
+' atingirMeta Macro
+'
+'
+    Range("C7").GoalSeek Goal:=Range("E7"), ChangingCell:=Range("C4")
+End Sub
+
+--------------------------------------------------------
+
+Tabela dinâmica automatizada()
+
+- gravar macro atualizando 
+- criar modulo a parte
+- add valores a tabela
+- ir no VB e colocar modulo especifico apenas para att
+
+	Sub AtualizarTD()
+'
+' 		AtualizarTD Macro
+'
+'
+   	 	Sheets("TD").PivotTables("tb_ContagemSexo").PivotCache.Refresh
+	End Sub
+
+- pra atualizar automaticamente
+
+	- criar macro
+	- copiar comando abaTD.PivotTables("tb_ContagemSexo").PivotCache.Refresh que esta dentro do mod
+
+	- ir para abaTD -> mudar worksheet e activate e colar la
+
+-------------------------------------------------------
