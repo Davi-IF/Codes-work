@@ -1,21 +1,20 @@
-TAMANHO = 15
 
-def main():
-    A = []
-    soma = 0
-    
-    print(f"Digite os elementos da matriz {TAMANHO}x{TAMANHO}:")
-    for i in range(TAMANHO):
-        linha = list(map(int, input().split()))
-        if len(linha) != TAMANHO:
-            raise ValueError(f"Cada linha deve conter exatamente {TAMANHO} elementos.")
-        A.append(linha)
-    
-    for i in range(TAMANHO):
-        if isinstance(A[i][i], int) and A[i][i] % 2 == 0:
-            soma += A[i][i]
-    
-    print(f"Soma dos elementos pares na diagonal principal: {soma}")
+linhas = 4
+colunas = 5
 
-if __name__ == "__main__":
-    main()
+
+matriz = []
+
+
+print("Digite 20 elementos para a matriz (4 linhas e 5 colunas):")
+for i in range(linhas):
+    linha = []  
+    for j in range(colunas):
+        elemento = int(input(f"Elemento [{i+1}][{j+1}]: "))  
+        linha.append(elemento)  
+    matriz.append(linha)  
+
+
+print("\nMatriz 4x5 inserida:")
+for linha in matriz:
+    print(" ".join(map(str, linha)))  
